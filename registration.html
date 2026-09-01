@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <title>BrAInify Online Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">IGNITE</div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="registration.html">BrAInify Course</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </nav>
+        </header>
+        <div class="a4-page">
+            <div class="header">
+                <div class="logo">
+                    <img src="logo.png" alt="company logo">
+                </div>
+                <div class="header-text">
+                    <h1>BrAInify REGISTRATION FORM</h1>
+                    <P>Please complete all required information</P>
+                </div>
+            </div>
+            <form id="registrationform">
+                <h2>Personal Information</h2>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your fullname" required>
+                <br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <br><br>  
+                <label for="loe">Level of Education:</label>
+                <select id="loe" name="loe" required>
+                    <option value="">select level</option>
+                    <option value="BECE">Basic Education Level</option>
+                    <option value="WASSCE">Secondary Education Level</option>
+                    <option value="Tertiary Level">Diploma/Degree/Phd</option>
+                </select>    
+                <br><br>
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">select course</option>
+                    <option value="AI and Automation">AI and Automation</option>
+                    <option value="Content Creation">Content Creation</option>
+                    <option value="Financial Intelligence">Financial Intelligence</option>
+                    <option value="Digital Currency">Digital Currency</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Digital Economy">Digital Economy</option>
+                </select>    
+                <br><br>
+                <label>Gender:</label>
+                <div class="gender">
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <br><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <br><br>
+                </div>
+                <h2>Contact Information</h2>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                <br><br>
+                <label for="idtype">ID Type:</label>
+                <select id="idtype" name="idtype" required>
+                    <option value="">Select ID Type</option>
+                    <option value="Ecowas">Ecowas Card</option>
+                    <option value="Voter ID">Voter ID</option>
+                    <option value="Passport">Passport</option>
+                </select>
+                <br><br>
+                <label for="idnumber">ID Number:</label>
+                <input type="text" id="idnumber" name="idnumber" placeholder="Enter your ID number" required>
+                <br><br>
+                <h2>Parent/Gaurdian</h2>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required>
+                <br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter other phone number" required>
+                <br><br>
+                <h2>Location</h2>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="USA">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UAE">United Arab Emirates</option>
+                    <option value="China">China</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Ivory Coast">Ivory Coast</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Benin">Benin</option>
+                </select>
+                <br><br>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+                <h2>DECLARATION</h2>
+                <p class="declaration">I confirm that the information provided above is correct and complete.</p>
+                <br><br>
+                <div class="signature-section">
+                    <div>
+                        <label>Signature:</label>
+                        <div class="signature-line"></div>
+                    </div>
+                    <div>
+                        <label>Date:</label>
+                        <div class="date-line"></div>
+                    </div>
+                </div>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </body>
+</html>
